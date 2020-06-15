@@ -1,0 +1,354 @@
+body{
+    /* text-align: center; */
+    width: 1024px;
+    margin: 0 auto;
+}
+#index-div{
+    text-align: center;
+}
+#index-no-btn{
+    width: 300px;
+    height: 300px;
+}
+
+.wrapper{
+    width: 100%;
+    height: 500px;
+}
+.location{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.transition{
+    width: 150px;
+    height: 150px;
+    animation-name: my-ani2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    overflow: hidden;
+    
+}
+.location:hover .transition{
+    width: 100%;
+    height: 100%;
+    
+    
+}
+.wrapper .location .transition a{
+    color: red;
+    text-decoration: none;
+    display: inline-block;
+    animation-name: my-ani;
+    animation-duration: 4s;   
+    transform: translate(150px, 150px);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;
+}
+@keyframes my-ani2{
+    25%{
+        width: 100%;
+        height: 100%;
+    }
+    50%{
+        width: 50%;
+        height: 50%;
+    }
+    75%{
+        width: 30%;
+        height: 90%;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+    }
+}
+@keyframes my-ani{
+    10%{
+        transform: translate(900px, 10px);
+    }
+    25%{
+        transform: translate(250px, 10px) rotate(360deg);
+    }
+    50%{
+        transform: translate(400px, 250px);
+    }
+    60%{
+        transform: translate(900px, 900px);
+    }
+    75%{
+        transform: translate(600px, 10px) rotate(360deg);
+    }
+    85%{
+        transform: translate(1000px, 250px);
+    }
+    100%{
+        transform: translate(100px, 500px);
+    }
+
+}
+
+/* ----------------main------------------- */
+#main-header-wrapper{
+    width: 1024px;
+    height: 130px;
+    /* border: 1px solid; */
+    display: inline-flex;
+    margin-bottom: 0;
+}
+#main-header-logo{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+#main-logo{
+    color: #000;
+    text-shadow: 0px 0px 4px #ccc,
+                    0px 0px 4px #ff3, 
+                    2px -5px 6px #fd3,
+                    -2px -10px 11px #f80,
+                    2px -10px 18px #f20;
+}
+#main-header-serach{
+    margin: 50px;
+    width: 460px;
+    height: 50px;
+    border: 2px solid black;
+    
+}
+#search-text{
+    border: 3px solid red;
+    width: 400px;
+}
+/* ---------------main-section--------------------- */
+#top_{
+    position: fixed;
+    bottom :100px;
+    right : 300px;
+}
+#top_ > a{
+    text-decoration: none;
+    color: hotpink;
+    font-weight: bold;
+}
+.navi { 
+    list-style-type: none; 
+    height: 50px; 
+    padding: 0; 
+    margin: 0; 
+    background: #000000;
+}
+.navi li > a{
+    color: #fff;
+}
+.navi li ul a{
+    color: #000;
+}
+
+.navi li { 
+    float: left; 
+    position: relative; 
+    padding: 0; 
+    line-height: 40px; 
+    background:#000000;
+    
+}
+
+.navi li a { 
+    display: block; 
+    font-family:"굴림"; 
+    /* font-weight:600;  */
+    font-size:14px;
+    padding: 5px 25px; 
+    
+    text-decoration: none; 
+}
+
+
+.navi li ul {
+    display:none;
+    list-style-type: none;
+    position: absolute;
+    padding: 0;
+    border: 1px solid;
+}
+
+.navi li ul li{
+    width: 170px;
+    background-color: white;
+}
+
+.navi li:hover ul{
+    display: table;
+}
+
+.navi li ul li a:hover{
+    font-weight: 1000;
+}
+
+#iframe-wrapper{
+    display: inline-flex;
+    margin-top: 10px;
+    height: 321px;
+    overflow: hidden;
+}
+#IUyoutube{
+    width:560px;
+    height:315px;
+}
+#section-log{
+    margin-left: 50px;
+}
+table, th, td{
+    margin-top: 20px;
+    width: 400px;
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 5px;
+}
+td{
+    text-align: center;
+}
+#count{
+    color: #f04814;
+}
+/* ---------------introduce-section--------------------- */
+#introduce-wrapper{
+    width: 1024px;
+}
+#face{
+    display: inline;
+    margin-left: 43%;
+}
+#face img{
+    text-align: center;
+    padding: 5px;
+}
+#asd{
+    border: 1px dashed;
+}
+#jImg{
+    transition-duration: 0.5s;
+}
+#jImg:hover{
+    transform: scale(1.4);
+}
+/* ---------------interest-section--------------------- */
+#music{
+    transition-duration: 0.5s;
+}
+#music:hover{
+    transform: scale(1.4);
+}
+
+#music-textbox{
+    margin-left: 100px;
+    display: inline-block;
+    /* border: 1px solid; */
+    width: 630px;
+    height: 179px;
+    overflow: hidden;
+}
+#music:hover+#music-textbox #music-text{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#music-text {
+    /* display: none; */
+    transform: translateX(700px);
+    font-size: 25px;
+    transition-duration: .9s;
+    opacity: 0;
+}
+
+#starcraft{
+    transition-duration: 0.5s;
+}
+#starcraft:hover{
+    transform: scale(1.4);
+}
+
+#starcraft-textbox{
+    margin-left: 100px;
+    display: inline-block;
+    /* border: 1px solid; */
+    width: 630px;
+    height: 179px;
+    overflow: hidden;
+}
+#starcraft:hover+#starcraft-textbox #starcraft-text{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#starcraft-text {
+    /* display: none; */
+    transform: translateX(700px);
+    font-size: 25px;
+    transition-duration: .9s;
+    opacity: 0;
+}
+#lol{
+    transition-duration: 0.5s;
+}
+#lol:hover{
+    transform: scale(1.4);
+}
+
+#lol-textbox{
+    margin-left: 100px;
+    display: inline-block;
+    /* border: 1px solid; */
+    width: 630px;
+    height: 179px;
+    overflow: hidden;
+}
+#lol:hover+#lol-textbox #lol-text{
+    transform: translateX(0);
+    opacity: 1;
+}
+#lol-text {
+    /* display: none; */
+    transform: translateX(700px);
+    font-size: 25px;
+    transition-duration: .9s;
+    opacity: 0;
+}
+/* ---------------footer--------------------- */
+#main-footer-wrapper{
+    text-align: center;
+    height: 100px;
+    
+}
+
+#footer-ul{
+    list-style: none;
+    
+}
+
+#footer-ul li{
+    float: left;
+    width: 25%;
+
+}
+
+#footer-ul li a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+#footer-ul li  a:hover {
+    color:salmon;
+}
+
+#footer-ul::after{
+    content : " ";
+    display: block;
+    clear: both;
+}
